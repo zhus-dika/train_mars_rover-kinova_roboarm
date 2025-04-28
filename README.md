@@ -4,8 +4,7 @@
 - Mars Rover https://www.mathworks.com/help/sm/ug/mars_rover.html
 ## 🪲 GUIDE
 
-- Open project file `Mars-Rover-Terrain-Simscape-24.1.1.1/Mars_Rover_Terrain.prj` to load need data for mars rover
-- In Command Window run `openExample('rl/TrainSACAgentForBallBalanceControlExample')`
+- Open project file `rlKinovaBallBalance.prj`
 - Run `TrainSACAgentForBallBalanceControlExample.mlx` script
 - For 3d visualisation, change `Visualisation` option from `None` to `3D Mesh`
 
@@ -28,8 +27,8 @@ struct with fields:
          
 ## 🐒 Main scheme
 
-![alt text](https://github.com/zhus-dika/mars_rover-kinova_roboarm/blob/main/images/main_scheme.png)    
+![alt text](https://github.com/zhus-dika/train_mars_rover-kinova_roboarm/blob/main/images/main_scheme.png)    
 
 ## 🦚 Results
 
-![Alt Text](https://github.com/zhus-dika/mars_rover-kinova_roboarm/blob/main/images/mars_rover%2Bkinova_roboarm_compressed.gif)D
+![Alt Text](https://github.com/zhus-dika/train_mars_rover-kinova_roboarm/blob/main/images/mars_rover%2Bkinova_roboarm_compressed.gif)D
