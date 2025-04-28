@@ -1,4 +1,4 @@
-curr_proj = simulinkproject;
+% curr_proj = simulinkproject;
 
 % Load parameters
 mars_rover_params_all
