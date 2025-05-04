@@ -55,7 +55,7 @@ R7_q0 = deg2rad(-90);
 gAngle0 = 35;
 
 % Max torque limit
-max_torque = 0.25;
+max_torque = 0.75;
 
 robot_opacity = 1;
 
@@ -66,8 +66,20 @@ g = 9.80665;
 % to find initial torques when ball is at plate center, change the 
 % rev joints R6 and R7 to accept motion inputs R6_q0 and R7_q0 and sense 
 % the torques.
-shoulder_torque_0 = 0; % Actuator2
-elbow_torque_0    = 0; % Actuator3
+m2 = 0.206679;
+m3 = 0.137977;       % масса локтя
+m4 = 0.4;
+
+g = 9.80665;
+m_eff_shoulder = m2 + m3 + m4 + ball.mass;
+d_eff_shoulder = 0.2;
+shoulder_torque_0 = m_eff_shoulder * g * d_eff_shoulder * cos(R2_q0);
+
+% shoulder_torque_0 = m2 * g * d2 * cos(R2_q0);    
+
+m_eff_elbow = m4 + ball.mass;   % всё, что висит на локте
+d_eff_elbow = 0.12;         % расстояние от локтя до центра масс платформы
+elbow_torque_0 = m_eff_elbow * g * d_eff_elbow * cos(R2_q0 + R3_q0);
 
 wrist_torque_0 = (-1.882 + ball.x0 * ball.mass * g) * cos(deg2rad(-65) - R6_q0);
 hand_torque_0 = (0.0002349 - ball.y0 * ball.mass * g) * cos(deg2rad(-90) - R7_q0);
