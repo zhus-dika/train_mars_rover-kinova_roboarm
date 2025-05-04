@@ -31,4 +31,4 @@ struct with fields:
 
 ## 🦚 Results
 
-![Alt Text](https://github.com/zhus-dika/train_mars_rover-kinova_roboarm/blob/main/images/mars_rover%2Bkinova_roboarm_compressed.gif)D
+![Alt Text](https://github.com/zhus-dika/train_mars_rover-kinova_roboarm/blob/main/data/output/kinovaBallBalanceAgent_with_mars_rover_act2_act3_v3/roboarm_act_2-3-6-7.gif)
