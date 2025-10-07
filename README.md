@@ -1,4 +1,4 @@
-Source code for the paper *"Robust Ball Balancing on Mobile Platforms for Planetary Rover Applications with adaptive control".*
+Source code for the paper *"Robust Ball Balancing on Mobile Platforms for Planetary Rover Applications with adaptive control" https://ieeexplore.ieee.org/document/11166234.*
 ## 🦋 Used models from the Mathworks Team
 
 - Train Kinova RoboArm https://www.mathworks.com/help/reinforcement-learning/ug/train-sac-agent-for-ball-balance-control.html
